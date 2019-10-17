@@ -37,7 +37,7 @@
                 text-decoration: none;
                 color: #BDBDBD;
                 text-transform: uppercase;
-                font-weight: bold;
+                font-weight: bold;  
             }
             #section1{
                 height: 970px;
@@ -513,6 +513,23 @@
     
                                                
                     </div>
+                    <canvas id="myCanvas"></canvas>
+
+        <script>
+                var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+                var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+
+                
+                ctx.fillStyle = "#000000";
+                ctx.beginPath(); //선그리기 시작
+                ctx.moveTo(65, 75); //펜 들어 움직이기
+                ctx.lineTo(90, 85); //선 그으며 움직이기
+                ctx.lineTo(101, 105); //선 그으며 움직이기
+                ctx.lineTo(110, 85);
+                ctx.lineTo(90, 55);
+                ctx.fill(); //내부 채우기
+                
+         </script>
                     
     </body>
 </html>
