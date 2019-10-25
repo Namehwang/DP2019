@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8" />
+        <title>레이아웃1</title>
+        <style>
+            header,div,nav,footer,h1,h2,ul,li{
+                /* margin: 10px; */
+                /* border: solid 1px black;*/
+            }
+            h1{
+                margin: 0px;
+            }
+            h2{
+                margin: 0px;
+            }
+            header>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #zoom{
+                margin: 9px;
+            }
+            header>ul>li{
+                float:left;
+                list-style:none;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: 1px solid gray;
+            }
+            header>ul>li:nth-child(5){
+                border: none;
+            }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            .float_left{float: left;}
+            .float_right{float:right;}
+            nav{
+                background-color: #ccc;
+            }
+
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            nav>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .container:nth-child(1){background-color:#98f;}
+            .container:nth-child(2){background-color:#5d9;}
+            .container:nth-child(3){background-color:#f76;}
+            .container:nth-child(4){background-color:#ec5;}
+        </style>
+    </header>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <img src="images/logo_blue.jpg" />
+                </h1>
+                <ul class="float_left">
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <div class="clear"></div>
+                </ul>
+                <div id="zoom" class="float_right">
+                    <img src="images/zoom.jpg" />
+                </div>
+                <div class="clear"></div>
+            </header>
+            <nav>
+                <h2 class="float_left">
+                    See Our Works
+                </h2>
+                <ul class="float_right">
+                    <li>Web Design</li>
+                    <li>Icons</li>
+                    <li>Illustlations</li>
+                    <li>Misc</li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+            <div>
+                <div class="container">
+                    <section>
+                        <h3>Web Design</h3>
+                            <div class="content_part">
+                                <img src="images/webdesign.jpg" />
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                    Consectetur adipiscing elit.
+                                    Suspendisse sed leo tellus. Praesent 
+                                    ec vehicula ligula, non laoreet ligula. 
+                                    Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="container">
+                        <section>
+                            <div class="content_part">
+                                <img src="images/webdesign.jpg" />
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                    Consectetur adipiscing elit.
+                                    Suspendisse sed leo tellus. Praesent 
+                                    ec vehicula ligula, non laoreet ligula. 
+                                    Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="container">
+                        <section>
+                            <div class="content_part">
+                                <img src="images/webdesign.jpg" />
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                    Consectetur adipiscing elit.
+                                    Suspendisse sed leo tellus. Praesent 
+                                    ec vehicula ligula, non laoreet ligula. 
+                                    Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="container">
+                        <section>
+                            <div class="content_part">
+                            <img src="images/webdesign.jpg" />
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                    Consectetur adipiscing elit.
+                                    Suspendisse sed leo tellus. Praesent 
+                                    ec vehicula ligula, non laoreet ligula. 
+                                    Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>
+
+<header>
+    <div
+</header>
+
+<na></na>
+<div></div>
+<footer></footer>
