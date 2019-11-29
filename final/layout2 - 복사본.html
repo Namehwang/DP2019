@@ -38,22 +38,64 @@
                 margin: 0px;
             }
             #main_visual{
-                background-image: url("images/main.jpg");
+
+                color: white;
+                text-align: center;
+
+            }
+            video{
+                top: 50%
+                left: 50%;
+                min-width:100%;
+                max-width:100%;
+                width: auto;
+                height: auto;
+            }
+            #section1{
+                padding-top: 57.6px;
+                height: 720px;
+                background: #FAFAFA;
+                display: inline-block;
+                width: 100%;
+            }
+            #section2{
+                background-image: url("images/k5-5.jpg");
                 background-size: 100% auto;
                 background-repeat: no-repeat;
                 /*repeat, no-repeat, repeat-x, repeat-y*/
                 background-color: black;
                 background-position: 50% 50%;
-
-                color: white;
-                text-align: center;
-                padding: 100px 0px;
+                padding-top: 57.6px;
+                height: 720px;
+                display: inline-block;
+                width: 100%;               
             }
-            #section1{
-                height: 970px;
-                background: #FAFAFA;
+            .k5 img{
+                position: absolute;
+                width:20%;
+                top:145%;
+                left:75%;
+            }
+            #section3{
+                padding-top: 57.6px;
+                height: 720px;
+                background: pink;
                 display: inline-block;
                 width: 100%;
+            }
+            #section4{
+                padding-top: 57.6px;
+                height: 720px;
+                background: orange;
+                display: inline-block;
+                width: 100%;               
+            }
+            #section5{
+                padding-top: 57.6px;
+                height: 720px;
+                background: red;
+                display: inline-block;
+                width: 100%;               
             }
             #main_visual h2{
                 font-size: 40px;
@@ -74,35 +116,45 @@
             section{
                 text-align: center;
             }
+
             section h3{
-                color: #02918c;
-                font-size: 30px;
-                font-weight: normal;
+                color: white;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
             section p{
                 margin: 80px 0px;
                 padding: 0px 100px;
             }
+            .info{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                left:50%;
+            }
             section ul{
                 padding: 0px;
             }
             section #about_list{
-                padding: 0px 100px; /*상하 좌우*/
+                padding: 0px 25px; /*상하 좌우*/
+                color:white;
+                margin-top:500px;
+                margin-left:230px;
             }
             section dd{
                 margin: 0px;
             }
             section>#about_list>li{
                 float: left;
-                width: 300px;
-                width: 25%;
-                width: calc(25% - (1px /4 * 3) - 40px - 40px);
+                width: 240px;
+                width: 20%;
+                width: calc(20% - (1px /5 * 3) - 40px - 40px);
                 list-style: none;
+                padding: 10px;
 
-                border-right: solid 1px #ccc;
-                padding: 40px;
+                border-right: solid 1px white;
+                background-color: rgba(0,0,0,0.5);
             }
-            section>#about_list>li:nth-child(4){
+            section>#about_list>li:nth-child(5){
                 border: none;
             }
             #work_list li{
@@ -132,74 +184,78 @@
             <nav class="float_right">
                 <ul>
                     <li><a href="#section1">K5</a></li>
-                    <li>Interial</li>
-                    <li>Exterial</li>
-                    <li>Engine</li>
-                    <li>Convnient</li>
+                    <li><a href="#section2">Vehicle Data</a></li>
+                    <li><a href="#section3">Exterial</a></li>
+                    <li><a href="#section4">Engine</a></li>
+                    <li><a href="#section5">Convnient</a></li>
                     <div class="clear"></div>
                 </ul>
             </nav>
-            <div class="clear"></div>
         </header>
         <div id="section1">
         <div id="main_visual">
-            <div id="visual_title_top">Loem ipsum dolor sit iusmod tempor</div>
-            <h2>INCIDIDUNT BORE</h2>
-            <div id="visual_title_bottom">Orem ipsum dolor sit amet, consectetu</div>
-            <img src="images/knowmore.jpg" />
+            <video id="bgvid" playsinline autoplay muted>
+                <source src="images/k5_ad.mp4" type="video/mp4" />
+                <source src="images/k5_ad.mp4" type="video/webm" />
+            </video>
         </div>
+
         </div>
+        <div id="section2">
         <section>
-            <h3>ABOUT ME</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat duis aute irure dolor.
-            </p>
+            <div class="k5"><img src="images/k5_logo_b.png" /></div>
             <ul id="about_list">
                 <li>
-                    <img src="images/icon1.jpg" />
+                    <img src="images/cost.png" />
                     <dl>
-                        <dt>Title goes here</dt>
+                        <dt>차량가격</dt>
                         <dd>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi 
-                            et dolorerserss eerhfre mag.
+                            <h3>23,510,000</h3>
                         </dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="images/icon2.jpg" />
+                    <img src="images/cost.png" />
                     <dl>
-                        <dt>Title goes here</dt>
+                        <dt>복합연비</dt>
                         <dd>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi 
-                            et dolorerserss eerhfre mag.
+                            <h3>14km/ℓ</h3>
                         </dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="images/icon3.jpg" />
+                    <img src="images/oil.png" />
                     <dl>
-                        <dt>Title goes here</dt>
+                        <dt>배기량</dt>
                         <dd>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi 
-                            et dolorerserss eerhfre mag.
+                            <h3>1,999cc</h3>
                         </dd>
                     </dl>
                 </li>
                 <li>
-                    <img src="images/icon4.jpg" />
+                    <img src="images/oil.png" />
                     <dl>
-                        <dt>Title goes here</dt>
+                        <dt>최고출력 (Ps/Rpm)</dt>
                         <dd>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi 
-                            et dolorerserss eerhfre mag.
+                            <h3>160 Ph/6,500 Rpm</h3>
                         </dd>
                     </dl>
                 </li>
-                <div class="clear"></div>
+                <li>
+                    <img src="images/cost.png" />
+                    <dl>
+                        <dt>무상보증기간</dt>
+                        <dd>
+                            <h3>3년/6만Km</h3>
+                        </dd>
+                    </dl>
+                 </li>
+
             </ul>
+            <div class="clear"></div>
         </section>
+        </div>
+        <div id="section3">
         <section>
             <h3>MY WORKS</h3>
             <p>
@@ -218,6 +274,13 @@
                 <div class="clear"></div>
             </ul>
         </section>
+        </div>
+        <div id="section4">
+
+        </div>
+        <div id="section5">
+
+        </div>
         </div>
     </body>
 </html>
