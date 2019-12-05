@@ -4,9 +4,25 @@
         <title>layout2</title>
         <metacharset="utf-8" />
         <style>
-            body{
-                margin: 0px;
+            .gnb{
+                color: #fff;
+                position: absolute;
+                width: 80%;
+                margin-left: 700px;
+                margin-top: 10px;
+                text-align: center;
+                float:right;
+                font-weight: normal;
+                font-size:8pt;
             }
+            .gnb>li{
+                margin-left: 200px;  
+            }
+            .gnb>a{
+                text-decoration: none;
+                color: #000;
+            }
+       
             header{
                 background-color: #02918c;
                 color: white;
@@ -103,9 +119,42 @@
                 margin-right: auto;
                 margin-left: auto;
             }
+            footer li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+                
+            }
+            footer{
+                border-top: 1px solid #EAEAEB;
+                padding: 5px;
+            }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            .cate>ul{
+                text-align: center;
+                margin-left: 39%;
+            }
+            .copyright{
+                text-align: center;
+            }
+            .sns{
+                margin-left: 39%;
+                margin-top: 2%;
+            }
         </style>
     </head>
     <body>
+            <div class="gnb">
+                    <a href="index1.html">Mainㅣ</a>
+                    <a href="layout1.html">Layout1ㅣ</a>
+                    <a href="layout2.html">Layout2ㅣ</a>
+                    <a href="layout3.html">Layout3ㅣ</a>
+                    <a href="free.html">K5_AD</a>
+            </div>
+            <div class="clear"></div>
         <div id="wrap">
         <header>
             <h1 class="float_left">
@@ -202,4 +251,35 @@
         </section>
         </div>
     </body>
+    <footer>
+            <div class="cate">
+                <ul>
+                    <li>Main</li>
+                    <li>Layout1</li>
+                    <li>Layout2</li>
+                    <li>Layout3</li>
+                    <li>K5_AD</li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="copyright">
+                <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                <div>
+                    the loges in the design are the property 
+                    of their respective owners/copyright holders. 
+                </div>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><img src="images/face.png" /></li>
+                    <li><img src="images/ins.png" /></li>
+                    <li><img src="images/tw.png" /></li>
+                    <li><img src="images/pin.png" /></li>
+                    <li><img src="images/bal.png" /></li>
+                    <li><img src="images/gm.png" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+                <div class="clear"></div>
+                </div>
+        </footer>
 </html>

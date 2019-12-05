@@ -10,6 +10,22 @@
             body{
                 margin: 0px;
             }
+            .menu{
+                margin: 0px;
+                padding: 0px;
+            }
+            .menu>ul{
+                padding:0px;
+            }
+            .gnb{
+                width: 75%;
+                float:right;
+                font-weight: normal;
+                font-size:8pt;
+            }
+            .gnb>li{
+                margin-left: 100px;
+            }
             header{
                 background-color: black;
                 color: white;
@@ -97,10 +113,10 @@
                 width: 100%;
             }
             #section3>section>div{
-              float:right;
-              width: 25%;
-              height: 750px;             
-              background-repeat: no-repeat;
+                float:right;
+                width: 25%;
+                height: 750px;             
+                background-repeat: no-repeat;
             }
             #section3>section>div:hover{
                 width: 40%;
@@ -344,26 +360,60 @@
                 margin-top: 180px;
                 margin-left: 750px;
             }
+            footer li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+                
+            }
+            footer{
+                background-color: #000;
+                border-top: 1px solid #EAEAEB;
+                color: #fff;
+                padding: 5px;
+            }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            .cate>ul{
+                text-align: center;
+                margin-left: 39%;
+            }
+            .copyright{
+                text-align: center;
+            }
+            .sns{
+                margin-left: 39%;
+                margin-top: 2%;
+            }
         </style>
     </head>
-    <body>
+    <body> 
         <div id="wrap">
-        <header>
+        <header>               
             <h1 class="float_left">
                 <img src="images/k5_logo.png" />
                 <!-- div span 의미없이 구획나누기 좋음 -->
             </h1>
-            <nav class="float_right">
+                <nav class="float_right">
+                    <div class="gnb">
+                        <a href="index1.html">Mainㅣ</a>
+                        <a href="layout1.html">Layout1ㅣ</a>
+                        <a href="layout2.html">Layout2ㅣ</a>
+                        <a href="layout3.html">Layout3ㅣ</a>
+                        <a href="free.html">K5_AD</a>
+                    </div>
                 <ul>
-                    <li><a href="#section1">K5</a></li>
-                    <li><a href="#section2">Stat</a></li>
-                    <li><a href="#section3">Exterior</a></li>
-                    <li><a href="#section4">Interior</a></li>
-                    <li><a href="#section5">Engine</a></li>
-                    <div class="clear"></div>
+                        <li><a href="#section1">K5</a></li>
+                        <li><a href="#section2">Stat</a></li>
+                        <li><a href="#section3">Exterior</a></li>
+                        <li><a href="#section4">Interior</a></li>
+                        <li><a href="#section5">Engine</a></li>                   
+                <div class="clear"></div>
                 </ul>
-            </nav>
-        </header>
+                </nav>
+    </header>
         <div id="section1">
         <div id="main_visual">
             <video id="bgvid" playsinline autoplay muted>
@@ -493,16 +543,45 @@
                                     <div class="thefront"><p>Smart Stream L2.0</p></div>
                                     <div class="theback">
                                         <img src="images/stream_l.png" />
-                                        <p>Smart Stream L2.0<br />
-                                        배기량 : 1,999cc<br />
-                                        최대출력 : 146hp<br />
+                                            <p>Smart Stream L2.0<br />
+                                            배기량 : 1,999cc<br />
+                                            최대출력 : 146hp<br />
                                         최대토크 : 19.5kg.m</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                 </section>
-                </div>
+            </div>
         </div>
     </body>
+    <footer>
+        <div class="cate">
+            <ul>
+                <li>Main</li>
+                <li>Layout1</li>
+                <li>Layout2</li>
+                <li>Layo</li>    <div class="clear"></div>
+                </ul>
+                <div class="copyright">
+                <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                <div>
+                    the loges in the design are the property 
+                    of their respective owners/copyright holders. 
+                </div>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><img src="images/face.png" /></li>
+                    <li><img src="images/ins.png" /></li>
+                    <li><img src="images/tw.png" /></li>
+                    <li><img src="images/pin.png" /></li>
+                    <li><img src="images/bal.png" /></li>
+                    <li><img src="images/gm.png" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        <div class="clear"></div>
+            </div>
+        </footer>
 </html>

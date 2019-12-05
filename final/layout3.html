@@ -4,17 +4,31 @@
         <title>layout3</title>
         <meta charset="utf-8" />
         <style>
-            body{
-                background-image: url("images/bg.jpg");
+            .gnb{
+                width: 40%;
+                text-align: center;
+                float:right;
+                font-weight: normal;
+                font-size:8pt;
+             }
+             .gnb>a{
+                 text-decoration: none;
+                 color: #000;
+             }
+            .header{
+                padding: 0px 10px 0px 0px;
+            }
+            header h1{
+                margin-left: 35px;
             }
             header li{
                 float: left;
                 list-style: none;
-                padding: 0px 10px; /*상하좌우*/
+                padding: 0px 30px; /*상하좌우*/
                 padding: 0px 20px 0 0; /*상후하좌*/           
                 }
             header ul{
-                padding: 0px;
+                padding: 0px 40px;
                
             }
             .clear{clear: both;
@@ -23,7 +37,7 @@
             .short_line{
                 border-bottom: solid 1px gray;
                 width: 35px;
-                margin: 10px 0px; /*상하 좌우*/
+                margin: 0px 35px; /*상하 좌우*/
             }
             .long_line{
                 border-bottom: solid 1px gray;
@@ -75,10 +89,43 @@
                 list-style: none;
                 margin: 15px;
             }
+            footer li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+                
+            }
+            footer{
+                border-top: 1px solid #EAEAEB;
+                padding: 5px;
+            }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            .cate>ul{
+                text-align: center;
+                margin-left: 39%;
+            }
+            .copyright{
+                text-align: center;
+            }
+            .sns{
+                margin-left: 39%;
+                margin-top: 2%;
+            }
         </style>
     </head>
     <body>
+            
         <div id="wrap">
+                <div class="gnb">
+                        <a href="index1.html">Mainㅣ</a>
+                        <a href="layout1.html">Layout1ㅣ</a>
+                        <a href="layout2.html">Layout2ㅣ</a>
+                        <a href="layout3.html">Layout3ㅣ</a>
+                        <a href="free.html">K5_AD</a>
+                </div>
             <header>
                 <h1>Gridly</h1>
                 <div class="short_line"></div>
@@ -386,6 +433,35 @@
                 <div class="short_line"></div>
                 <div>This website & the Internet Ends hereg</div>
                 <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
+                        <div class="cate">
+                            <ul>
+                                <li>Main</li>
+                                <li>Layout1</li>
+                                <li>Layout2</li>
+                                <li>Layout3</li>
+                                <li>K5_AD</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <div class="copyright">
+                            <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                            <div>
+                                the loges in the design are the property 
+                                of their respective owners/copyright holders. 
+                            </div>
+                        </div>
+                        <div class="sns">
+                            <ul>
+                                <li><img src="images/face.png" /></li>
+                                <li><img src="images/ins.png" /></li>
+                                <li><img src="images/tw.png" /></li>
+                                <li><img src="images/pin.png" /></li>
+                                <li><img src="images/bal.png" /></li>
+                                <li><img src="images/gm.png" /></li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                            <div class="clear"></div>
+                            </div>
             </footer>
         </div>    
     </body>
