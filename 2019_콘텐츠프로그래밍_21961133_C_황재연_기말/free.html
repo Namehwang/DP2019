@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>layout2</title>
+        <metacharset="utf-8" />
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin: 0px;
+            }
+            .menu{
+                margin: 0px;
+                padding: 0px;
+            }
+            .menu>ul{
+                padding:0px;
+            }
+            .gnb{
+                width: 75%;
+                float:right;
+                font-weight: normal;
+                font-size:8pt;
+            }
+            .gnb>li{
+                margin-left: 100px;
+            }
+            header{
+                background-color: black;
+                color: white;
+                font-style: bold;
+                padding: 2px 50px; /*상하 좌우*/
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                display: block;
+            }
+            h1 img{
+                width: 10%;
+
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            nav{
+                font-weight: bold;
+            }
+            
+            .float_left{ float:left; }
+            .float_right{
+                float:right;
+                margin-right: 100px;  
+            }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            header>h1{
+                margin: 0px;
+            }
+            #main_visual{
+
+                color: white;
+                text-align: center;
+            }
+            video{
+                top: 50%
+                left: 50%;
+                min-width:100%;
+                max-width:100%;
+                width: auto;
+                height: auto;
+            }
+            #section1{
+                padding-top: 57.6px;
+                height: 720px;
+                background: #FAFAFA;
+                display: inline-block;
+                width: 100%;
+            }
+            #section2{
+                background-image: url("images/k5-5.jpg");
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                /*repeat, no-repeat, repeat-x, repeat-y*/
+                background-color: black;
+                background-position: 50% 50%;
+                padding-top: 57.6px;
+                height: 720px;
+                display: inline-block;
+                width: 100%;               
+            }
+            .k5 img{
+                position: absolute;
+                width:20%;
+                top:145%;
+                left:75%;
+            }
+            #section3{
+                background-image: url("images/7203.jpg");
+                background-size: 20% auto;
+                background-repeat: no-repeat;
+                /*repeat, no-repeat, repeat-x, repeat-y*/
+                background-color: black;
+                background-position: 3% 50%;
+                padding-top: 57.6px;
+                height: 720px;
+                display: inline-block;
+                width: 100%;
+            }
+            #section3>section>div{
+                float:right;
+                width: 25%;
+                height: 750px;             
+                background-repeat: no-repeat;
+            }
+            #section3>section>div:hover{
+                width: 40%;
+                height: 720px;
+                font-size: 10pt;
+                color: #fff;
+                background-color:#020724;
+            }
+            .box{
+                transition: width 0.5s;
+                background-image: url("images/720_1.jpg");
+            }
+            .box1{
+                transition: width 0.5s;
+                background-image: url("images/7201_1.jpg");
+            }
+            .box1>p{
+                font-size:200pt;
+            }
+            .box2{
+                transition: width 0.5s;
+                background-image: url("images/7202_1.jpg");
+            }
+            h2{
+                color: #fff;
+                font-size: 19pt;
+                margin-top: 550px;
+            }
+            h3{
+                font-weight: normal;
+                font-size: 12pt;
+            }
+            #section4{
+                background-image: url("images/interior.jpg");
+                background-size: 100% auto;
+                background-position: 50% 50%;
+                padding-top: 57.6px;
+                height: 720px;
+                display: inline-block;
+                width: 100%;               
+            }
+            #section5{
+                background-color: #000;
+                padding-top: 57.6px;
+                height: 720px;
+                display: inline-block;
+                width: 100%; 
+                background-repeat: no-repeat;              
+            }
+            #main_visual h2{
+                font-size: 40px;
+                font-weight: normal;
+                letter-spacing: 10px;
+                margin: 5px;
+            }
+
+            #visual_title_top{
+                font-size: 20px;
+            }
+            #visual_title_bottom{
+                font-size: 15px;
+            }
+            #main_visual img{
+                margin: 100px 0px 0px 0px; /*상우하좌 (위로부터 시계방향)*/
+            }
+            section{
+                text-align: center;
+            }
+
+            section h3{
+                color: white;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            section p{
+                margin: 80px 0px;
+                padding: 0px 100px;
+            }
+            .info{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                left:50%;
+            }
+            section ul{
+                padding: 0px;
+            }
+            section #about_list{
+                padding: 0px 25px; /*상하 좌우*/
+                color:white;
+                margin-top:500px;
+                margin-left:230px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 240px;
+                width: 20%;
+                width: calc(20% - (1px /5 * 3) - 40px - 40px);
+                list-style: none;
+                padding: 10px;
+
+                border-right: solid 1px white;
+                background-color: rgba(0,0,0,0.5);
+            }
+            section>#about_list>li:nth-child(5){
+                border: none;
+            }
+            #work_list li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_list img{
+                width: 100%;
+                display: block;
+            }
+            #wrap{
+                min-width: 900px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #card{
+                margin-left: 20%;
+                margin-top: 10%;
+            }
+            .maincontainer{
+                position: relative;
+                width: 280px;
+                height: 400px;
+            }
+            .thecard{
+                border: solid 1px #fff;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease;
+                font-weight: bold;
+            }
+            .thecard:hover{
+                transform: rotateY(180deg);
+            }
+            .thefront{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background: #000;
+                color:#fff;
+                text-align: center;
+            }
+            .thefront>p{
+                font-size: 15pt;
+                text-align: none;
+            }
+            .theback{
+                
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background: #000;
+                color:#fff;
+                transform: rotateY(180deg);
+            }
+            .theback>p{
+                position: 50% 50%;
+                width: 150px;
+                font-size: 12pt;
+                margin-left: -35px;
+                margin-top: 60px;
+            }
+            .theback>img{
+                margin-top: 20px;
+                width: 60%;
+            }
+            #card2{
+                margin-left: 40%;
+                margin-top: -26.4%;
+            }
+            .thecard2:hover{
+                transform: rotateY(180deg);
+            }
+            .thecard2{
+                border: solid 1px #fff;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease;
+                font-weight: bold;
+            }#card3{
+                margin-left: 60%;
+                margin-top: -26.4%;
+            }
+            .thecard3:hover{
+                transform: rotateY(180deg);
+            }
+            .thecard3{
+                border: solid 1px #fff;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease;
+                font-weight: bold;
+            }
+            #section4>section>img{
+                position: absolute;
+                float:left;
+                width: 400px;
+                margin-top: 400px;
+                margin-left: 250px;
+                border: solid 1px #fff;
+            }
+            #section4>section>.cluster{
+                position: absolute;
+                float:left;
+                font-size: 12pt;
+                font-style: bold;
+                color: #fff;
+                margin-top: 580px;
+                margin-left: 980px;
+            }
+            #section4>section>.gear{
+                position: absolute;
+                font-size: 12pt;
+                font-style: bold;
+                color: #fff;
+                margin-top: 420px;
+                margin-left: 600px;
+            }
+            #section4>section>.navi{
+                position: absolute;
+                font-size: 12pt;
+                font-style: bold;
+                color: #fff;
+                margin-top: 180px;
+                margin-left: 750px;
+            }
+            footer li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+                
+            }
+            footer{
+                background-color: #000;
+                border-top: 1px solid #EAEAEB;
+                color: #fff;
+                padding: 5px;
+            }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            .cate>ul{
+                text-align: center;
+                margin-left: 39%;
+            }
+            .copyright{
+                text-align: center;
+            }
+            .sns{
+                margin-left: 39%;
+                margin-top: 2%;
+            }
+        </style>
+    </head>
+    <body> 
+        <div id="wrap">
+        <header>               
+            <h1 class="float_left">
+                <img src="images/k5_logo.png" />
+                <!-- div span 의미없이 구획나누기 좋음 -->
+            </h1>
+                <nav class="float_right">
+                    <div class="gnb">
+                        <a href="index1.html">Mainㅣ</a>
+                        <a href="layout1.html">Layout1ㅣ</a>
+                        <a href="layout2.html">Layout2ㅣ</a>
+                        <a href="layout3.html">Layout3ㅣ</a>
+                        <a href="free.html">K5_AD</a>
+                    </div>
+                <ul>
+                        <li><a href="#section1">K5</a></li>
+                        <li><a href="#section2">Stat</a></li>
+                        <li><a href="#section3">Exterior</a></li>
+                        <li><a href="#section4">Interior</a></li>
+                        <li><a href="#section5">Engine</a></li>                   
+                <div class="clear"></div>
+                </ul>
+                </nav>
+    </header>
+        <div id="section1">
+        <div id="main_visual">
+            <video id="bgvid" playsinline autoplay muted>
+                <source src="images/k5_ad.mp4" type="video/mp4" />
+                <source src="images/k5_ad.mp4" type="video/webm" />
+            </video>
+        </div>
+
+        </div>
+        <div id="section2">
+        <section>
+            <div class="k5"><img src="images/k5_logo_b.png" /></div>
+            <ul id="about_list">
+                <li>
+                    <img src="images/cost.png" />
+                    <dl>
+                        <dt>차량가격</dt>
+                        <dd>
+                            <h3>23,510,000</h3>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/oil.png" />
+                    <dl>
+                        <dt>복합연비</dt>
+                        <dd>
+                            <h3>14km/ℓ</h3>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/co2.png" />
+                    <dl>
+                        <dt>배기량</dt>
+                        <dd>
+                            <h3>1,999cc</h3>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/speed.png" />
+                    <dl>
+                        <dt>최고출력 (Ps/Rpm)</dt>
+                        <dd>
+                            <h3>160 Ph/6,500 Rpm</h3>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/mech.png" />
+                    <dl>
+                        <dt>무상보증기간</dt>
+                        <dd>
+                            <h3>3년/6만Km</h3>
+                        </dd>
+                    </dl>
+                 </li>
+
+            </ul>
+            <div class="clear"></div>
+        </section>
+        </div>
+        <div id="section3">
+            <section>
+                <div class="box">
+                    <p>
+                        <h2>Heart Beat Lighting</h2><br />
+                        <h3>Dynamic Design</h3>
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        <h2>Chrome Silhouette Moulding</h2><br />
+                        <h3>Bold Design</h3>
+                    </p>
+                </div>
+                <div class="box2">
+                        <p>
+                            <h2>Fast Back Style</h2><br />
+                            <h3>Sleek Design</h3>
+                        </p>
+                </div>
+            </section>
+        </div>               
+        <div id="section4">
+            <section>
+                <img src="images/clu.png" />
+                <p class="cluster">12.3인치 풀 칼라 TFT LCD 클러스터</p>
+                <p class="gear">전자식 변속 다이얼(SBW)</p>
+                <p class="navi">10.25인치 UVO 네비게이션</p>
+            </section>
+        </div>
+        <div id="section5">
+                <section>
+                    <div id="card">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><p>Smart Stream G2.0</p></div>
+                            <div class="theback">
+                                <img src="images/stream.png" />
+                                <p>Smart Stream G2.0<br />
+                                배기량 : 1,999cc<br />
+                                최대출력 : 160hp<br />
+                                최대토크 : 20.0kg.m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card2">
+                        <div class="maincontainer">
+                            <div class="thecard2">
+                                <div class="thefront"><p>Smart Stream T1.6</p></div>
+                                <div class="theback">
+                                    <img src="images/stream_t.png" />
+                                    <p>Smart Stream T1.6<br />
+                                    배기량 : 1,591cc<br />
+                                    최대출력 : 180hp<br />
+                                    최대토크 : 27.0kg.m</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card3">
+                            <div class="maincontainer">
+                                <div class="thecard3">
+                                    <div class="thefront"><p>Smart Stream L2.0</p></div>
+                                    <div class="theback">
+                                        <img src="images/stream_l.png" />
+                                            <p>Smart Stream L2.0<br />
+                                            배기량 : 1,999cc<br />
+                                            최대출력 : 146hp<br />
+                                        최대토크 : 19.5kg.m</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="cate">
+            <ul>
+                <li>Main</li>
+                <li>Layout1</li>
+                <li>Layout2</li>
+                <li>Layo</li>    <div class="clear"></div>
+                </ul>
+                <div class="copyright">
+                <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                <div>
+                    the loges in the design are the property 
+                    of their respective owners/copyright holders. 
+                </div>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><img src="images/face.png" /></li>
+                    <li><img src="images/ins.png" /></li>
+                    <li><img src="images/tw.png" /></li>
+                    <li><img src="images/pin.png" /></li>
+                    <li><img src="images/bal.png" /></li>
+                    <li><img src="images/gm.png" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        <div class="clear"></div>
+            </div>
+        </footer>
+</html>
